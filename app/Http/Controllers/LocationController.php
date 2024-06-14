@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Location;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 
 class LocationController extends Controller
@@ -52,6 +53,7 @@ class LocationController extends Controller
         $title = 'Edit Location';
         return view('admin.location.edit', compact('adminlocation', 'title'));
     }
+
 
     public function update(Request $request, Location $adminlocation)
     {
