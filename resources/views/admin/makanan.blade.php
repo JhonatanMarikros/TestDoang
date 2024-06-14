@@ -1,7 +1,6 @@
 @extends('admin.layouts.main')
 @section('container')
     <div class="container">
-        <h1>INI Minuman</h1>
+        <h1>INI Makanan</h1>
     </div>
 @endsection
-

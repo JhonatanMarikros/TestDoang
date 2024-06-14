@@ -2,14 +2,16 @@
 
 use App\Http\Controllers\MakananController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LocationController;
 
 Route::get('/', function () {
     return view('main.home');
 });
 
-Route::get('/menu', function () {
-    return view('main.menu');
-});
+
+Route::get('/location', [LocationController::class, 'mainPage'])->name('location.main');
+
+
 
 // ADMIN
 Route::get('/adminhome', function () {
@@ -18,11 +20,7 @@ Route::get('/adminhome', function () {
     ]);
 });
 
-Route::get('/adminminuman', function () {
-    return view('admin.minuman', [
-        'title' => 'Minuman'
-    ]);
-});
+
 
 Route::get('/admincoupon', function () {
     return view('admin.coupon', [
@@ -30,6 +28,8 @@ Route::get('/admincoupon', function () {
     ]);
 });
 
+
 Route::resource('adminmakanan', MakananController::class);
 
 Route::get('/menu', [MakananController::class, 'showMenu'])->name('menu');
+Route::resource('adminlocations', LocationController::class);
