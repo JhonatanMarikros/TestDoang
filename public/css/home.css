@@ -1,0 +1,139 @@
+.header{
+    position: relative;
+    top: -100px;
+}
+.custom-navbar {
+    max-width: 1280px;
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+    top: 150px;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 1000;
+}
+.navbar-logo {
+    height: 50px;
+}
+.navbar-nav .nav-link {
+    color: black;
+    font-weight: bold;
+    margin-right: 15px;
+}
+.navbar-nav .nav-link:hover {
+    color: red;
+}
+.navbar-nav .btn {
+    border-radius: 25px;
+}
+.navbar .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar .container .navbar-brand {
+    margin-right: auto;
+}
+.navbar .container .collapse {
+    margin-left: auto;
+}
+
+
+#about-us {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+#about-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about-us p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+#about-us .img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+#about-us,
+#about-us-2 {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+#about-us h2,
+#about-us-2 h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about-us p,
+#about-us-2 p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+#about-us .img-fluid,
+#about-us-2 .img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer {
+    background-color: #8B5E3C; /* Adjust this color to match your site's theme */
+    padding: 20px 0;
+    color: white;
+}
+
+.footer .footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer .footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer .footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer .app-badge {
+    width: 150px;
+    margin: 10px 0;
+}
+
+.footer .social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .social-links li {
+    margin-bottom: 10px;
+}
+
+.footer .social-links a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.footer .social-links img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.carousel{
+    margin-top: -70px; /* Sesuaikan nilai negatif untuk menaikkan slider */
+    position: relative;
+    z-index: 500; /* Pastikan z-index lebih rendah dari .brown-banner */
+}
