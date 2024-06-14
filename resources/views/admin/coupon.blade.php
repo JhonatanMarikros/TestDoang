@@ -4,5 +4,6 @@
 <div class="container">
     <h1>INI Coupon</h1>
 </div>
+
     
 @endsection

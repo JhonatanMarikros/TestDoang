@@ -1,0 +1,188 @@
+/* Gaya untuk mengubah warna teks saat dipilih */
+::selection {
+    background: #B82D38; /* Warna latar belakang saat teks dipilih */
+    color: #fff; /* Warna teks saat dipilih */
+}
+
+/* Tambahkan ini untuk mengatur posisi navbar */
+.navbar {
+    position: relative;
+    z-index: 1000; /* Pastikan navbar selalu di atas elemen lainnya */
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+/* Tambahkan margin-top pada section untuk memberi jarak dengan navbar */
+.menu-kakaku {
+    margin-top: 60px; /* Sesuaikan nilai ini sesuai kebutuhan */
+}
+
+/* Pastikan wrapper memiliki z-index yang lebih rendah dari navbar */
+.wrapper {
+    position: relative;
+    z-index: 1;
+    max-width: 1090px; /* Ubah ukuran wrapper */
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* Sesuaikan heading */
+.heading {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2vw;
+    background-image: url('img/locations-underline.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-bottom: 25px;
+    background-size: 30%;
+    color: #444;
+    margin-top: 100px; /* Tambahkan margin-top untuk jarak dengan navbar */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0; /* Pastikan tidak ada padding */
+    margin: 0;  /* Pastikan tidak ada margin */
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fav-img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+ul li::before {
+    margin-right: 10px;
+    color: gold;
+}
+
+ul li::after {
+    margin-left: 10px;
+    color: lightblue;
+}
+
+.caption ul {
+    list-style: none;
+    margin: 0 0 30px 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.caption ul li {
+    display: inline-block;
+    float:left;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+.caption ul li img {
+    width: 50px;
+    height: 62px;
+}
+
+nav.menu-wrapper {
+    display: flex;
+    justify-content: center;
+    border: 2px solid #B82D38;
+    border-radius: 6px;
+    width: auto; /* Sesuaikan lebar menu-wrapper */
+    margin: 0 auto; /* Agar menu tetap terpusat */
+    padding: 0; /* Pastikan tidak ada padding */
+}
+
+nav.menu-wrapper ul {
+    display: flex;
+    justify-content: space-between; /* Pastikan item diatur secara merata */
+    padding: 0; /* Pastikan tidak ada padding */
+    margin: 0; /* Pastikan tidak ada margin */
+    list-style: none;
+    width: 100%; /* Pastikan ul mengambil lebar penuh dari menu-wrapper */
+}
+
+nav.menu-wrapper ul li {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 20px; /* Sesuaikan padding agar lebih rapi */
+    font-weight: bold;
+    color: #B82D38;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-right: 2px solid #B82D38;
+    flex-grow: 1; /* Pastikan setiap item mengambil ruang yang sama */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav.menu-wrapper ul li:last-child {
+    border-right: none;
+}
+
+nav.menu-wrapper ul li.selected, 
+nav.menu-wrapper ul li:hover {
+    color: #fff;
+    background: #B82D38;
+    border-right: none; /* Hilangkan batas saat item dipilih atau di-hover */
+}
+
+nav.menu-wrapper ul li.selected {
+    border-right: 2px solid transparent; /* Hilangkan batas kanan pada item yang dipilih */
+}
+
+.category-title h2, .category-title p {
+    display: inline;
+    color: #444;
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-size: 25px;
+    font-style: normal;
+}
+
+.category-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.menu-item.type-menu {
+    width: 50%;
+    float: left;
+    display: flex;
+    align-items: center;
+    padding: 10px 18px;
+    min-height: 240px;
+}
+
+.menu-item.type-menu .menu-item-description h3, .menu-item.type-menu .menu-item-description h4 {
+    color: #444;
+    margin: 5px 0;
+}
+
+.menu-item.type-menu .menu-item-description {
+    float: left;
+    padding: 0 0 0 10px;
+    width: 67%;
+}
+
+.menu-item.type-menu .menu-item-description p {
+    font-size: 20px;
+    color: #444;
+    font-family: "LXGW WenKai Mono TC", monospace;
+    margin: 5px 0;
+}
+
+.menu-item-image {
+    width: 250px;
+    border-radius: 50%;
+}

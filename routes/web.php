@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MakananController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LocationController;
 
@@ -19,17 +20,7 @@ Route::get('/adminhome', function () {
     ]);
 });
 
-Route::get('/adminmakanan', function () {
-    return view('admin.makanan', [
-        'title' => 'Makanan'
-    ]);
-});
 
-Route::get('/adminminuman', function () {
-    return view('admin.minuman', [
-        'title' => 'Minuman'
-    ]);
-});
 
 Route::get('/admincoupon', function () {
     return view('admin.coupon', [
@@ -37,4 +28,8 @@ Route::get('/admincoupon', function () {
     ]);
 });
 
+
+Route::resource('adminmakanan', MakananController::class);
+
+Route::get('/menu', [MakananController::class, 'showMenu'])->name('menu');
 Route::resource('adminlocations', LocationController::class);
