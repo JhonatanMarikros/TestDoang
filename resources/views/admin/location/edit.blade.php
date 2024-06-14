@@ -20,7 +20,14 @@
                 <img src="{{ asset('storage/' . $adminlocation->image) }}" alt="Location Image" width="100">
             @endif
         </div>
+        <div class="form-group">
+            <label for="open">Open Time</label>
+            <input type="time" name="open" class="form-control" value="{{ $adminlocation->open }}">
+        </div>
+        <div class="form-group">
+            <label for="close">Close Time</label>
+            <input type="time" name="close" class="form-control" value="{{ $adminlocation->close }}">
+        </div>
         <button type="submit" class="btn btn-primary">Update</button>
     </form>
-</div>
-@endsection
+</div

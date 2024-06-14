@@ -4,6 +4,8 @@
     <h1>{{ $title }}</h1>
     <p><strong>Name:</strong> {{ $adminlocation->name }}</p>
     <p><strong>Description:</strong> {{ $adminlocation->description }}</p>
+    <p><strong>Open Time:</strong> {{ $adminlocation->open }}</p>
+    <p><strong>Close Time:</strong> {{ $adminlocation->close }}</p>
     @if ($adminlocation->image)
         <img src="{{ asset('storage/' . $adminlocation->image) }}" alt="Location Image" width="300">
     @else

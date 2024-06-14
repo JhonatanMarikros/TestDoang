@@ -24,10 +24,9 @@
                     <h2>{{ $location->name }}</h2>
                     <p>{{ $location->description }}</p>
                     <p><strong>Hours of Operation:</strong></p>
-                    <p>Mon Sat 10:30am-9pm</p>
-                    <p>Sunday 10:30am - 9pm</p>
-                    <button class="btn btn-danger btn-order"><a href="https://wa.me/+6288807069499">RESERVATION
-                            NOW</a></button>
+                    <p>Monday - Saturday: {{ $location->open ? \Carbon\Carbon::createFromFormat('H:i:s', $location->open)->format('H:i') : 'N/A' }} - {{ $location->close ? \Carbon\Carbon::createFromFormat('H:i:s', $location->close)->format('H:i') : 'N/A' }}</p>
+                    <p>Sunday: {{ $location->open ? \Carbon\Carbon::createFromFormat('H:i:s', $location->open)->format('H:i') : 'N/A' }} - {{ $location->close ? \Carbon\Carbon::createFromFormat('H:i:s', $location->close)->format('H:i') : 'N/A' }}</p>
+                    <button class="btn btn-danger btn-order"><a href="https://wa.me/+6288807069499">RESERVATION NOW</a></button>
                 </div>
                 <div class="location-map">
                     @if ($location->image)
@@ -49,8 +48,8 @@
                         <h3>Delivery Service</h3>
                         <div class="image">
                             <img src="{{ asset('image/gofood.jpg') }}" alt="GoFood">
-                        <img src="{{ asset('image/grabfood.jpg') }}" alt="GrabFood">
-                        <img src="{{ asset('image/shopee.jpg') }}" alt="Shopee">
+                            <img src="{{ asset('image/grabfood.jpg') }}" alt="GrabFood">
+                            <img src="{{ asset('image/shopee.jpg') }}" alt="Shopee">
                         </div>
                     </div>
                 </div>
@@ -84,7 +83,6 @@
             </div>
         </div>
     </footer>
-
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>

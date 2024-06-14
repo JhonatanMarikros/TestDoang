@@ -16,6 +16,14 @@
             <label for="image">Image</label>
             <input type="file" name="image" class="form-control">
         </div>
+        <div class="form-group">
+            <label for="open">Open Time</label>
+            <input type="time" name="open" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="close">Close Time</label>
+            <input type="time" name="close" class="form-control">
+        </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </div>
